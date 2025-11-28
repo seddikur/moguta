@@ -1,0 +1,230 @@
+.p-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1001;
+    background: rgba(0, 0, 0, .7);
+}
+
+    @media (min-width: 576px) {
+        .p-modal_min {
+            display: flex;
+            justify-content: center;
+            overflow-y: auto;
+            height: 100%;
+        }
+    }
+
+.p-modal__container {
+    min-width: 320px;
+}
+
+    .p-modal__container_big {
+        width: 100%;
+        height: 100%;
+    }
+
+        @media (min-width: 576px) {
+            .p-modal__container_min {
+                min-width: 400px;
+                max-width: 400px;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .p-modal__container_min {
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+
+.p-modal__inner {
+    position: relative;
+    background: #fff;
+}
+
+    @media (min-width: 576px) {
+        .p-modal__inner_min {
+            border-radius: 5px;
+        }
+    }
+
+.p-modal__inner_big {
+    height: 100%;
+}
+
+.p-modal .p-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+}
+
+.p-modal-body {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    @media(min-width: 0) {
+        .p-modal-body__container {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .p-modal-body__container {
+            max-width: 540px;
+            min-width: 400px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .p-modal-body__container {
+            max-width: 768px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .p-modal-body__container {
+            max-width: 1180px;
+        }
+    }
+
+.p-modal-body__inner {
+    padding: 50px;
+    min-height: 100%;
+}
+
+    @media (max-width: 575px) {
+        .p-modal-body__inner {
+            padding: 30px 15px;
+        }
+    }
+
+@media (min-width: 576px) {
+    .p-modal-body__inner_min {
+        padding: 30px;
+    }
+}
+
+    .p-modal-body__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.p-modal__item + .p-modal__item {
+    margin-top: 30px;
+}
+
+.p-modal__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 23px;
+}
+
+.p-modal-form__field + .p-modal-form__field {
+    margin-top: 20px;
+}
+
+.p-modal-form__lable {
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 5px;
+}
+
+.p-modal__action {
+    display:  flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.p-modal__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-modal__content_element {
+    margin: -15px;
+}
+
+    /* element */
+    @media(min-width: 0) {
+        .element {
+            padding: 15px;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .element {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .element {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+        
+        }
+    }
+
+    .element_active .element__inner {
+        background: #000; color: #fff
+    }
+    
+    .element__inner {
+        border: 1px solid #000;
+        position: relative;
+        padding: 20px;
+        border-radius: 2px;
+        height: 100%;
+    }
+
+    .element__inner__colum {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .element__tab,
+    .element__select {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: none;
+        font-size: 0;
+        border: none; 
+    }
+
+    .element__item + .element__item {
+        margin-top: 10px;
+    }
+
+.p-modal button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.p-modal .p-modal__button {
+    display: block;
+    color: #1585cf;
+    border-bottom: 1px dashed #1585cf;
+}
+
+.p-modal .p-modal__button:hover {
+    border-color: transparent;
+}

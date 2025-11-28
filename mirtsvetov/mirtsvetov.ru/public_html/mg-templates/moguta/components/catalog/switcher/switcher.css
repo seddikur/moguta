@@ -1,0 +1,52 @@
+/* c-switcher
+------------------------------------------------------------------- */
+.c-switcher {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+    .c-switcher {
+        display: none;
+    }
+}
+
+.c-switcher__item {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 36px;
+    cursor: pointer;
+    color: #999;
+    border: 1px solid #dadada;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-switcher__item:last-child {
+    border-left: 0;
+}
+
+.c-switcher__item--active {
+    pointer-events: none;
+    color: #5b3f97;
+}
+
+.c-switcher__item:hover:not(.c-switcher__item--active) {
+    background: #f3f3f3;
+}

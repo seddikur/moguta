@@ -1,0 +1,188 @@
+/* 
+    Содержит стили модального окна.
+*/
+.mg-admin-html .p-modal button {
+    margin: 0 !important;
+}
+
+.mg-admin-html .p-modal input {
+    height: 40px !important;
+    margin: 0 !important;
+}
+
+.mg-admin-html .p-modal input[type="number"]::-webkit-outer-spin-button,
+.mg-admin-html .p-modal input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.mg-admin-html .p-modal input[type='number'],
+.mg-admin-html .p-modal input[type="number"]:hover,
+.mg-admin-html .p-modal input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.mg-admin-html .p-modal textarea {
+    height: 100px!important;
+    margin: 0 !important;
+    line-height: 30px;
+}
+
+.mg-admin-html .p-modal .input_invalid {
+    border-color: red !important;
+}
+
+.p-modal {
+    line-height: 22px;
+}
+
+.p-modal {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1001;
+    background: rgba(0, 0, 0, .7);
+}
+
+    @media (min-width: 576px) {
+        .p-modal_min {
+            display: flex;
+            justify-content: center;
+            overflow-y: auto;
+            height: 100%;
+        }
+    }
+
+.p-modal__container {
+    position: relative;
+    background: #fff;
+    min-width: 320px;
+}
+
+    .p-modal__container_big {
+        width: 100%;
+        height: 100%;
+    }
+
+        @media (min-width: 576px) {
+            .p-modal__container_min {
+                min-width: 400px;
+                max-width: 400px;
+                margin: auto;
+                border-radius: 5px;
+            }
+        }
+        
+        @media (max-width: 575px) {
+            .p-modal__container_min {
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+
+.p-modal .p-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 21px;
+    font-size: 28px;
+}
+
+.p-modal-body {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    @media(min-width: 0) {
+        .p-modal-body__container {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .p-modal-body__container {
+            max-width: 540px;
+            min-width: 400px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .p-modal-body__container {
+            max-width: 768px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .p-modal-body__container {
+            max-width: 1180px;
+        }
+    }
+
+.p-modal-body__inner {
+    padding: 50px;
+    min-height: 100%;
+}
+
+    @media (max-width: 575px) {
+        .p-modal-body__inner {
+            padding: 30px 15px;
+        }
+    }
+
+@media (min-width: 576px) {
+    .p-modal-body__inner_min {
+        padding: 30px;
+    }
+}
+
+    .p-modal-body__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.p-modal__item + .p-modal__item {
+    margin-top: 30px;
+}
+
+.p-modal__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 23px;
+}
+
+.p-modal-form__field + .p-modal-form__field {
+    margin-top: 20px;
+}
+
+.p-modal-form__lable {
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 5px;
+}
+
+.p-modal__action {
+    display:  flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.mg-admin-html .p-modal button + button {
+    margin-left: 15px !important;
+}
+
+.p-modal .button-link {
+    display: block;
+    color: #1585cf;
+    border-bottom: 1px dashed #1585cf;
+}
+
+.p-modal .button-link:hover {
+    border-color: transparent;
+}

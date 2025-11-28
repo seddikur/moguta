@@ -1,0 +1,533 @@
+.c-compare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-compare__title {
+    display: block;
+    margin: 0 10px 15px 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0 ;
+}
+
+.c-compare__top {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.c-compare__empty {
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 520px;
+    padding: 15px 15px;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.c-compare-empty__title {
+    display: block;
+    margin: 0 0 15px;
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.c-compare-empty__content {
+    font-size: 16px;
+}
+
+.c-compare-empty__link {
+    color: var(--link-color);
+    border-bottom: 1px solid #E3EEFF;
+    opacity: 0.2s;
+}
+
+.c-compare-empty__link:hover {
+    opacity: 0.8;
+}
+
+.c-compare__items-container {
+    position: relative;
+    z-index: 11;
+    padding: 15px 15px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.c-compare__top__select .c-compare-select {
+    padding: 0 25px 0 10px;
+    height: 30px;
+    background-color: var(--background-color) !important;
+    min-width: 180px;
+    background-position-x: 90% !important;
+    border: none;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .c-compare__top__select .c-compare-select {
+        height: 30px !important;
+    }
+}
+
+.c-compare__top__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.c-compare__top__buttons .default-btn.c-compare__clear {
+    background: var(--button-background);
+    box-shadow: none !important;
+    color: var(--main-text-color, #333);
+    opacity: 1;
+    border-bottom: none;
+    border-radius: 100px;
+}
+
+.c-compare__top__buttons .default-btn.c-compare__clear:hover {
+    background: var(--hover-btn-color);
+}
+
+
+@media (max-width: 1024px) {
+    .c-compare__title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .c-compare__top__buttons .c-button {
+        padding: 0;
+        background: 0;
+        color: #666;
+        border-bottom: 1px dashed #666;
+        border-radius: 0;
+        font-size: 14px;
+        line-height: 1;
+        height: 25px;
+    }
+
+    .c-compare__top__buttons .c-button .icon {
+        display: none;
+    }
+
+    .c-compare__top select {
+        height: 25px;
+    }
+
+    .c-compare__top {
+        height: auto;
+    }
+}
+
+.c-compare__wrapper .compare-product__item {
+    position: relative;
+}
+
+.c-compare__items .swiper-slide {
+    min-width: auto;
+    padding: 0 10px;
+    width: auto;
+    height: auto;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 266px;
+    min-width: 266px;
+}
+.c-compare__wrapper .swiper-slide:first-child,
+.c-compare__items .swiper-slide:first-child {
+    padding-left: 0;
+}
+
+.c-compare__wrapper .swiper-slide:last-child,
+.c-compare__items .swiper-slide:last-child {
+    padding-right: 0;
+    border-right: none;
+    margin-right: 0 !important;
+}
+
+
+.c-compare__top-buttons {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.c-compare__left {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.c-compare__right {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    overflow: auto;
+    margin: 10px 0;
+    padding: 15px 15px;
+    border-radius: 12px;
+    background: #fff;
+
+}
+
+.c-compare__wrapper .swiper-slide {
+    width: auto;
+    height: auto;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: auto;
+    border-right: 1px solid #EDEFF5;
+    padding: 0 10px;
+    max-width: 266px;
+    min-width: 266px;
+}
+
+.c-compare__item {
+    overflow: hidden;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.c-compare__img {
+    display: block;
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: var(--main-background-color);
+}
+
+.c-compare__img img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+
+.compare-product__title {
+    font-size: 14px;
+    color: #848484;
+    line-height: 1.67;
+    margin-bottom: 4px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+}
+
+.c-compare__item:hover .compare-product__title {
+    text-decoration: underline;
+}
+
+.compare-product__title:hover {
+    color: var(--accent-color);
+}
+
+.c-compare__property {
+    display: none;
+}
+
+.c-compare__table {
+    font-size: 12px;
+    line-height: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-bottom: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.c-compare__table__left {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+}
+
+.c-compare__table__left .c-compare__row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.c-compare__table__left .c-compare__column {
+    font-weight: 500;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.c-compare__table__right .c-compare__column {
+    min-width: 225px;
+    max-width: 225px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-compare__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.c-compare__column {
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 35px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #dadada;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-compare__name {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.c-compare__value {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 500;
+    color: #666;
+}
+
+.c-compare__remove {
+    text-align: right;
+    text-align: right;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.c-compare__remove:hover {
+    color: var(--accent-color);
+}
+
+
+.c-compare .compare-product__title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    max-height: 47px;
+    min-height: 47px;
+}
+
+
+.mg-compare-products .mg-tooltip .mg-tooltip-content {
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background: #fff;
+    top: 100%;
+    left: 10px;
+    color: #000;
+    font-size: 12px;
+    line-height: 19px;
+    box-shadow: 0 1px 23px 1px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    width: 200px;
+}
+
+.mg-compare-products .mg-tooltip:hover .mg-tooltip-content {
+    display: block !important;
+}
+
+.mg-compare-products .mg-tooltip:hover {
+    color: #9e9999;
+    border: 1px solid #9e9999;
+}
+
+.mg-compare-products .mg-tooltip {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    color: #1391c7;
+    font-size: 9px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #1391c7;
+    cursor: pointer;
+}
+
+.c-compare__column {
+    position: relative;
+}
+
+.mg-compare-fake-table-cell.with-tooltip .mg-tooltip {
+    right: 5px;
+    left: auto;
+}
+
+.mg-compare-fake-table-cell.with-tooltip .mg-tooltip {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.compare-product__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    max-height: 30px;
+    min-height: 30px;
+    flex-wrap: wrap;
+}
+
+.mg-compare-product .compare-product__price--current {
+    margin-right: 10px;
+}
+
+.mg-compare-product .compare-product__price--old {
+    color: #848484;
+}
+
+.c-compare__right{
+    scrollbar-color: var(--main-color) #f3f3f3;
+    scrollbar-width: 10px;
+}
+
+.c-compare__right::-webkit-scrollbar {
+    background-color: #f3f3f3;
+    height: 8px;
+}
+
+.c-compare__right::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 5px; 
+}
+.c-compare__ungroup-title,
+.c-compare__group-title {
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+
+.c-compare__props {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.c-compare__items {
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+.compare-sticky .c-compare__items-container {
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(170, 189, 206, 0.25);
+}
+
+.c-compare-empty__img {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--main-background-color);
+    margin: 0 auto 50px;
+    overflow: hidden;
+}
+
+@media (min-width: 1201px) {
+    .c-compare__items .swiper-slide {
+        min-width: 266px;
+        max-width: 266px;
+    }
+    .c-compare__items-container {
+        padding: 15px 15px 0;
+        transition: box-shadow 0.25s, background 0.25s;
+    }
+    .c-compare__wrapper .swiper-slide {
+        max-width: 266px;
+        min-width: 266px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .compare-page .container {
+        padding: 0;
+    }
+    .c-compare__title {
+        padding: 20px;
+    }
+    .c-compare__top {
+        border-radius: 0;
+    }
+
+}

@@ -1,0 +1,59 @@
+$text-color: #000;
+$text-hover-color: #fff;
+$bg-color: #f7f8fa;
+$bg-hover-color: var(--main-color, #4854a2);
+$border-color: #e9e7e7;
+$border-radius: 6px;
+$transition-speed: .3s;
+
+.spoiler {
+  border: 1px solid $border-color;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  overflow: hidden;
+  color: $text-color;
+
+  &-toggle {
+    display: none;
+  }
+
+  & + & {
+    margin-top: -1px;
+    border-radius: 0;
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  &-title {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: $bg-color;
+    cursor: pointer;
+    transition: all $transition-speed linear;
+
+    &:hover {
+      background-color: $bg-hover-color;
+      color: $text-hover-color;
+    }
+  }
+
+  &-content {
+    padding: 0 1.25rem;
+    overflow: hidden;
+    height: 0;
+
+    // Псевдо-элементы нужны, чтобы сделать отступ снизу и сверху внутри контента,
+    // padding не подходит, так как он не даёт сделать нулевую высоту
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: .75rem;
+    }
+
+    transition: height $transition-speed linear;
+  }
+}

@@ -1,0 +1,22 @@
+.select__wrap {
+    margin-right: 10px;
+    line-height: 34px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.select__icon {
+    margin-right: 5px;
+}
+
+.select {
+    color: #666;
+    border: 1px solid #dadada;
+    background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .select__wrap {
+        display: none;
+    }
+}

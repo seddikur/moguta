@@ -1,0 +1,23 @@
+/*.c-cart__row {
+    display: flex;
+    align-items: center;
+}
+
+.c-cart__col {
+    padding: 5px;
+    width: 20%;
+}*/
+
+.c-cart__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-cart__footer {
+    display: block;
+}
+
+.c-cart__empty td {
+    width: 100%;
+    display: block;
+}

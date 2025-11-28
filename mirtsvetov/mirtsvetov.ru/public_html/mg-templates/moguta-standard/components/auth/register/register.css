@@ -1,0 +1,25 @@
+.agreement {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.agreement__label {
+  align-items: center;
+}
+
+.agreement__checkbox {
+  margin-right: 5px;
+}
+
+.register-btn {
+  transition: all 0.2s;
+}
+
+.register-btn:disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.registration__form .agreement {
+  text-align: left;
+}

@@ -1,0 +1,30 @@
+.c-compare__informer {
+    position: fixed;
+    z-index: 999;
+    top: 16px;
+    right: 0;
+    left: 0;
+    display: none;
+    width: 300px;
+    margin: auto;
+}
+
+.c-compare__informer--content {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px;
+    color: #fff;
+    background: #000;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-compare__informer .icon {
+    margin-right: 6px;
+}

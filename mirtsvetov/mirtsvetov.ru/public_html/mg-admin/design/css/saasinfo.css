@@ -1,0 +1,509 @@
+.saasinfo {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.saasinfo .saasinfo__progress {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.saasinfo__infoblock {
+    width: 50%;
+}
+
+.saasinfo .saasinfo__infoblock .medium-7 {
+    width: 100%;
+    padding: 0;
+}
+
+.saasinfo .saasinfo__infoblock .medium-7 .row {
+    display: flex;
+    align-items: center;
+}
+
+.saasinfo .progress-steps__list {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.progress-steps__video {
+    position: relative;
+    height: 155px;
+    width: 300px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.progress-steps__video img {
+    border-radius: 3px;
+    outline: none !important;
+}
+
+.progress-steps__video::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .3);
+    background-position: center;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+    transition: all .3s ease;
+}
+
+.progress-steps__video:hover::after {
+    background-size: 70px 70px;
+}
+
+.progress-steps__item {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.progress-steps__item.disable {
+    background-color: #f4f4f4;
+}
+
+.progress-steps__checkbox-description {
+    font-size: 13px;
+}
+
+.progress-steps__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.saasinfo .progress-steps__buttons .button {
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+}
+
+.progress-steps__more {
+    display: flex !important;
+    align-items: center;
+}
+
+.progress-steps__more i {
+    margin-left: 5px;
+}
+
+.saasinfo .saasinfo__progress .widget-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px !important;
+}
+
+.saasinfo .saasinfo__progress .widget-header h2{
+    margin: 0px;
+}
+
+.saasinfo .saasinfo__progress .widget-header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    transition: .2s;
+    flex-shrink: 0;
+}
+
+.saasinfo .saasinfo__progress .widget-info-panel button.disabled,
+.saasinfo .saasinfo__progress .widget-info-panel button.disabled * {
+    pointer-events: none !important;
+}
+
+.saasinfo .saasinfo__progress .widget-info-panel button.disabled {
+    opacity: .25;
+    color: #fff !important;
+}
+
+.saasinfo .saasinfo__progress .widget-info-panel__button,
+.saasinfo .saasinfo__infoblock.without-learning .widget-info-panel__button {
+    margin: 0 0 0 15px;
+    flex-shrink: 0;
+}
+
+.saasinfo .saasinfo__progress .widget-header button:hover {
+    fill: #50ae54;
+}
+
+.saasinfo .saasinfo__progress .widget-header button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.widget-info-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e6e6e6;
+    padding: 6px 18px;
+    background: #fefbe6;
+}
+
+.without-learning .widget-info-panel {
+    padding: 15px;
+    background: #fff;
+}
+
+.progress-steps__description p{
+    font-size: 13px;
+}
+
+.progress-steps__status {
+    width: 185px;
+    align-self: center;
+    margin-left: auto;
+    text-align: center;
+}
+
+.progress-steps__status {
+    font-size: 40px;
+    flex-shrink: 0;
+}
+
+.progress-steps__status .progress-steps__checkbox {
+    color: #fad68f;
+}
+
+.progress-steps__item.wait .progress-steps__checkbox-description {
+    color: #fad68f;
+}
+
+.progress-steps__item.done .progress-steps__status .progress-steps__checkbox {
+    position: relative;
+    left: 3px;
+    color: #71cd75;
+}
+
+.progress-steps__item.done .progress-steps__checkbox-description {
+    color: #71cd75;
+}
+
+.progress-steps__item.disable .progress-steps__status .progress-steps__checkbox {
+    color: #a9a9a9;
+}
+
+.progress-steps__item.disable .progress-steps__checkbox-description {
+    color: #a9a9a9;
+}
+
+.progress-steps__item.disable .progress-steps__status * {
+    pointer-events: none;
+}
+
+.progress-steps__content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.saasinfo .progress-steps__video-btn {
+    display: none;
+}
+
+.progress-steps__buttons-container {
+    display: flex;
+}
+
+.mg-admin-html .saasinfo .row .row {
+    margin: 0;
+}
+
+#bind-domain-modal .list-option {
+    padding: 0;
+    list-style-type: none;
+}
+
+#bind-domain-modal .product-text-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+#bind-domain-modal input {
+    margin-top: 5px;
+}
+
+#bind-domain-modal .alert-block {
+    width: 100%;
+}
+
+.saasinfo__infoblock.without-learning {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.saasinfo__infoblock.without-learning>.widget.widget-order-statistic {
+    margin-left: 15px;
+    width: 50%;
+}
+
+.saasinfo__infoblock.without-learning .saasinfo__container {
+    width: 50%;
+}
+
+.chartjs-size-monitor-infoblock {
+    display: flex;
+    flex-direction: column;
+}
+
+.chartjs-size-monitor-infoblock > div {
+    margin-top: 10px;
+}
+
+.widget-order-statistic .widget-panel .buttons-holder {
+    display: flex;
+}
+
+.widget-order-statistic .widget-panel .buttons-holder .button {
+    margin-top: 0;
+}
+
+.widget-order-statistic .widget-panel .buttons-holder select[name="typeView"] {
+    margin-left: 10px;
+}
+
+.saasinfo .saasinfo__infoblock .alert-block.rent {
+    width: 100%;
+}
+
+.saasinfo .saasinfo__infoblock .alert-block.rent {
+    padding: 10px 0;
+}
+
+.widget-order-statistic__first-container {
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.widget-order-statistic__second-container {
+    flex-grow: 1;
+}
+
+.saasinfo .saasinfo__infoblock .openFileManager {
+    margin-left: 10px;
+}
+
+@media (max-width: 1720px) {
+    .progress-steps__video {
+        height: 115px;
+        width: 150px;
+    }
+    .progress-steps__description p {
+        margin: 0;
+    }
+    .progress-steps__buttons {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .progress-steps__status {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1379px) {
+    .progress-steps__status {
+        width: 80px;
+    }
+}
+
+@media (min-width: 1221px) and (max-width: 1353px) {
+    .chartjs-size-monitor-infoblock > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .chartjs-size-monitor-infoblock > div .medium-6 {
+        width: 100% !important;
+    }
+    .chartjs-size-monitor-infoblock > div .medium-3 {
+        width: 16.66667% !important;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder > div:last-child {
+        margin-top: 7px;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder select[name="typeView"] {
+        margin-left: 0;
+    }
+    .widget-order-statistic__second-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .saasinfo {
+        flex-direction: column;
+    }
+    .saasinfo .saasinfo__progress {
+        width: 100%;
+    }
+    .saasinfo .saasinfo__infoblock {
+        width: 100%;
+    }
+    .saasinfo__infoblock.without-learning {
+        flex-direction: column;
+    }
+    .saasinfo__infoblock.without-learning .saasinfo__container {
+        width: 100%;
+    }
+    .saasinfo__infoblock.without-learning > .widget:last-child {
+        width: 100%;
+        margin-left: 0;
+        max-width: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .chartjs-size-monitor-infoblock > div .medium-10,
+    .chartjs-size-monitor-infoblock > div .medium-9 {
+        width: 70% !important;
+    }
+    .chartjs-size-monitor-infoblock > div .medium-2,
+    .chartjs-size-monitor-infoblock > div .medium-3 {
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .saasinfo .saasinfo__infoblock .row {
+        width: 100%;
+    }
+}
+
+@media (max-width: 735px) {
+    .progress-steps__status {
+        width: 100px;
+    }
+}
+
+@media (max-width: 666px) {
+    .saasinfo .saasinfo__infoblock .widget .widget-panel {
+        justify-content: center;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder select[name="typeView"] {
+        margin-left: 0;
+    }
+    .mg-admin-html .widget .widget-panel .buttons-holder.paramToChart>* {
+        margin-bottom: 0 !important;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder > div:last-child {
+        margin-top: 7px;
+    }
+    .widget-order-statistic .widget-panel .buttons-holder .button {
+        width: auto;
+    }
+}
+
+@media (max-width: 635px) {
+    .saasinfo .progress-steps__video-btn {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .progress-steps__video-btn i {
+        margin-left: 5px;
+    }
+    .progress-steps__video {
+        display: none !important;
+    }
+    .saasinfo .saasinfo__infoblock label:not(.product_field__label):not(.button--noindent) {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 540px) {
+    .saasinfo .saasinfo__progress .widget-header h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mg-admin-html .saasinfo .widget .widget-panel .buttons-holder .button {
+        padding: 5px 0;
+    }
+    .saasinfo .saasinfo__progress .widget-header button {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 470px) {
+    .progress-steps__item {
+        position: relative;
+    }
+    .progress-steps__content {
+        margin-right: 0;
+    }
+    .progress-steps__status {
+        width: 0;
+    }
+    .progress-steps__status .progress-steps__checkbox {
+        position: absolute !important;
+        top: 8px !important;
+        left: 15px !important;
+    }
+    .saasinfo h2.progress-steps__title {
+        padding-left: 40px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .progress-steps__buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .progress-steps__buttons-container {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .saasinfo .progress-steps__buttons .button {
+        margin: 0;
+    }
+    .widget-info-panel {
+        flex-direction: column;
+    }
+    .saasinfo .saasinfo__progress .widget-info-panel__button,
+    .saasinfo .saasinfo__infoblock.without-learning .widget-info-panel__button {
+        margin-top: 15px;
+    }
+    .progress-steps__checkbox-description {
+        display: none;
+    }
+    .progress-steps__status[tooltip] {
+        position: static;
+    }
+
+    .saasinfo .saasinfo__infoblock .refCurData, .saasinfo .saasinfo__infoblock .openFileManager {
+        margin-bottom: 0px;
+    }
+
+    .saasinfo .saasinfo__infoblock .js-timer-message {
+        margin-top: 5px;
+    }
+
+    
+}

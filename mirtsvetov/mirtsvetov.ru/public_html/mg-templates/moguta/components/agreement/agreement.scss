@@ -1,0 +1,101 @@
+.agreement {
+  text-align: center;
+
+  h2 {
+    line-height: 1.2;
+  }
+
+  &__checkbox {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  &__label {
+    display: inline-flex !important;
+
+    &:hover {
+      text-decoration: none !important;
+    }
+
+    &_error {
+      color: red !important;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 99998;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  &__modal {
+    width: 75%;
+    max-width: 800px;
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    box-shadow: none;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99999;
+    overflow: auto;
+    transition: opacity .3s;
+    text-align: left;
+    line-height: 1.4;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-height: 90vh;
+
+    &_hidden {
+      visibility: hidden;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    @media (max-width: 767px) {
+      width: calc(100% - 20px);
+
+      bottom: 0;
+      // Фиксит проблемы с высотой экрана из-за исчезающих-появляющихся шапки и футера в интерфейсе мобильного safari
+      height: auto;
+      padding-bottom: 70px;
+      top: -70px;
+      transform: translateY(70px);
+      // Инерционный скрол при overflow
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+
+  &__btn {
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    &_close {
+      float: right;
+      cursor: pointer;
+      color: black;
+      font-size: 35px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 20px;
+      padding: 0;
+    }
+
+    &_open {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+

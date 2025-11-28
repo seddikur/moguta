@@ -1,0 +1,13 @@
+2025-11-18 22:39:30 - POST data: Array
+(
+    [pluginHandler] => p4-push
+    [data] => Array
+        (
+            [api_key] => test
+            [project_id] => test
+            [database_url] => test
+            [default_topic] => notifications
+        )
+
+)
+

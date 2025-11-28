@@ -1,0 +1,41 @@
+.legal {
+    margin: 30px 0;
+}
+
+.legal__title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.legal__section + .legal__section {
+    margin-top: 30px;
+}
+
+.legal-entity__item + .legal-entity__item {
+    margin-top: 5px;
+}
+
+.legal-item__action {
+    margin-top: 15px;
+}
+
+.legal-item__button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.legal-item__button {
+    display: block;
+    border-bottom: 1px solid #000;
+}
+
+.legal-item__button:hover {
+    border-color: transparent;
+}
+
+
+.checkout .disabled {
+    opacity: 0.2;
+    cursor: default;
+}

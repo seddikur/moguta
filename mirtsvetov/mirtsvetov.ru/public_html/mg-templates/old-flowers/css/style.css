@@ -1,0 +1,286 @@
+@font-face {font-family: 'BazaART'; src: url('../fonts/bazaart.eot'); src: url('../fonts/bazaart.eot?#iefix') format('embedded-opentype'), url('../fonts/bazaart.woff2') format('woff2'), url('../fonts/bazaart.woff') format('woff'), url('../fonts/bazaart.ttf') format('truetype'), url('../fonts/bazaart.svg#bazaart') format('svg');
+}
+
+* {margin: 0px; padding: 0px; box-sizing: border-box; outline: none; -webkit-locale: auto}
+html, body {width: 100%}
+body {font-family: 'Montserrat', sans-serif; padding-top: 40px !important; line-height: 1; background: #fff; font-size: 16px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; color: #191918; overflow-y: overlay; font-weight: 300}
+body.body__index {padding-top: 0 !important}
+/* body.loading {opacity: 0} */
+html.lock, body.lock {overflow: hidden}
+a {color: inherit; text-decoration: none; outline: none; cursor: pointer; transition: 250ms}
+svg {fill: currentColor}
+img, svg {max-height: 100%; max-width: 100%; height: auto; display: block}
+li {display: block}
+body.body__catalog main {padding-bottom: 40px}
+main {min-height: calc(100vh - 295px)}
+h1, .h1-like, h2, .h2-like {text-transform: uppercase; font-family: 'BazaART'; letter-spacing: 1.5px; font-weight: 400}
+.admin-bar {top: unset !important; bottom: 0px}
+.admin-bar__elem--settings {display: none !important}
+.admin-bar__elem--btns {margin-left: auto}
+.admin-bar-link.admin-bar-link--enter {border: none !important}
+body .admin-bar .admin-bar-link__title {color: #fff !important}
+body .admin-bar .admin-bar-link__icon {fill: #fff !important}
+
+/* BASIC */
+.ds {-webkit-user-select: none; -moz-user-select: none; -webkit-user-drag: none; user-drag: none; user-select: none}
+.flex {display: flex; flex-wrap: wrap}
+.flex.column {flex-direction: column; padding: 0}
+.flex.center {justify-content: center}
+.flex.align-center {align-items: center}
+.flex.align-end {align-items: end}
+.flex.space-between {justify-content: space-between}
+.flex.end {justify-content: end}
+.flex.nowrap {flex-wrap: nowrap; white-space: inherit}
+.max {padding: 0px 20px; max-width: 1600px; margin: 0px auto}
+.cover {background-position: 50% 50%; background-repeat: no-repeat; background-size: cover}
+.contain-0 {background-position: 0% 50%; background-repeat: no-repeat; background-size: contain}
+.contain-50 {background-position: 50% 50%; background-repeat: no-repeat; background-size: contain}
+.contain-100 {background-position: 100% 50%; background-repeat: no-repeat; background-size: contain}
+.button {background: transparent; border: 1px solid #000; letter-spacing: 1.5px; font-family: 'BazaART'; transition: 250ms; height: 40px; display: flex; align-items: center; cursor: pointer; text-align: center; color: #000; justify-content: center; padding: 0 40px; border-radius: 20px}
+.button:active, .button:hover {background: #000; color: #fff}
+.button:disabled {opacity: 0.2; pointer-events: none}
+.mobile-show {display: none !important}
+.mobile-flex {display: none !important}
+.tablet-show {display: none !important}
+/* BASIC */
+
+
+/* INPUTS */
+input, select, textarea, button {-webkit-appearance: none; -moz-appearance: none; font-family: inherit; font-size: inherit; color: inherit; border-radius: 0px; font-weight: inherit}
+input[type=text], input[type=tel], input[type=email], input[type=password] {display: block; width: 100%; border: none; background: #fff; padding: 0px 20px; height: 50px; border-radius: 2px}
+textarea {display: block; width: 100%; border: none; padding: 10px; resize: none; height: 80px; font-size: 15px}
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus, input[type=password]:focus {border-color: #000}
+
+input[type=checkbox] {display: inline-block; vertical-align: middle; width: 16px !important; height: 16px; margin-right: 10px !important; position: relative; border: none; background: #fff}
+input[type=checkbox]:checked {background: #000 url("data:image/svg+xml,<svg viewBox='0 0 356.7 297.3' xmlns='http://www.w3.org/2000/svg'><polygon fill='%23fff' points='42.4,153 0,195.4 101.9,297.3 356.7,42.4 314.3,0 101.9,212.4'/></svg>") 50% 50% no-repeat; background-size: 9px}
+select {display: block; width: 100%; font-size: 15px; border: none; padding: 0px 10px; background: #fff url("data:image/svg+xml,<svg viewBox='11.4 7.1' width='11.4' height='7.1' xmlns='http://www.w3.org/2000/svg'><path d='M5,6.4l-5-5L1.4,0l4.3,4.3L10,0l1.4,1.4l-5,5L5.7,7.1L5,6.4z'/></svg>") no-repeat; background-position: right 10px center; background-size: 8px; border-radius: 2px; height: 40px !important; box-shadow: none !important; cursor: pointer; transition: border-color 250ms}
+select:hover, .form-list .SumoSelect>.CaptionCont:hover {border-color: #000}
+/* INPUTS */
+
+
+/* HEADER */
+header {position: fixed; top: 0; z-index: 1000; width: 100%}
+header .max {height: 100px}
+header .menu-block {width: 60px; height: 60px; margin-left: auto; position: relative}
+header .logo.active svg {transform: rotateZ(-45deg); transition: 250ms}
+.mobile-menu {position: absolute; top: 70px; transform-origin: 0 0; transition: 250ms; left: 50%; transform: scaleY(0) translateX(-50%); z-index: 1000px; font-size: 16px; font-weight: 400}
+.mobile-menu a {padding: 8px 0; display: block}
+.mobile-menu a:hover {opacity: 0.5}
+.mobile-menu.show {transform:  scaleY(1) translateX(-50%)}
+.menu-close {position: absolute; top: 0; right: 0; height: 60px; width: 60px; border: 1px solid #000; border-radius: 50%; display: none; z-index: 1}
+.menu-close.show {display: flex}
+.menu-close svg {width: 60px; height: 60px; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: transform 400ms}
+.menu-close.show svg {transform: rotate(45deg)}
+.menu-close svg .line {fill:none; transition: stroke-dasharray 400ms, stroke-dashoffset 400ms; stroke: currentColor; stroke-width:4; stroke-linecap:round}
+
+.menu-close svg .top {stroke-dasharray: 40 160}
+.menu-close svg .middle {stroke-dasharray: 40 142; transform-origin: 50%; transition: transform 400ms}
+.menu-close svg .bottom {stroke-dasharray: 40 85; transform-origin: 50%; transition: transform 400ms, stroke-dashoffset 400ms}
+.menu-close.show svg .top {stroke-dashoffset: -64px}
+.menu-close.show svg .middle {transform: rotate(90deg)}
+.menu-close.show svg .bottom {stroke-dashoffset: -64px}
+/* HEADER */
+
+
+/* HOME */
+body.body__index header.fixed {color: #000}
+body.body__index header {color: #fff}
+body.body__index .menu-close {border-color: #fff}
+body.body__index header.fixed .menu-close {border-color: #000}
+body.body__index header .logo:hover {color: #000}
+.home-first {position: relative; color: #fff; text-align: center}
+.home-first .inner {height: 100vh; background: rgba(0,0,0,0.2)}
+.home-first h1 {font-size: 100px; margin-bottom: 40px}
+.home-first h2 {font-size: 30px}
+.home-first h2.absolute {position: absolute; bottom: 40px; right: 40px; left: 40px}
+.home-first .back img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1}
+.home-first .button {border-color: #fff; background: #fff}
+.home-first .button:hover {color: #fff; background: #000; border-color: #000}
+
+.home-second h2 {text-align: center; font-size: 30px; margin: 40px 0}
+.home-second img {width: calc(50% - 20px); border-radius: 2px}
+.home-second .text {width: calc(50% - 20px); padding: 40px}
+.home-second .chess + .chess {margin-top: 40px}
+.home-second .chess + .chess img {order: 2}
+.home-second .chess + .chess .text {order: 1}
+
+.home-third img {width: 75%; margin: 80px auto; border-radius: 2px}
+
+.home-last {position: relative; color: #fff; text-align: center}
+.home-last .inner {height: 100vh; background: rgba(0,0,0,0.2); padding: 0 20px}
+.home-last .h1-like {font-size: 100px; margin-bottom: 40px}
+.home-last .h2-like {font-size: 30px}
+.home-last .h2-like.absolute {position: absolute; bottom: 40px; right: 40px; left: 40px}
+.home-last .back img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1}
+.home-last .button {border-color: #fff; background: #fff; margin-top: 20px}
+.home-last .button:hover {color: #fff; background: #000; border-color: #000}
+/* HOME */
+
+
+/* CONTENT */
+.static {padding-bottom: 80px}
+.static h1, .content h1 {margin-bottom: 40px}
+.static .max {max-width: 1050px}
+.content {line-height: 1.5}
+.content a {font-weight: 500; text-decoration: underline}
+.content p + p, .content p + ul, .content p + ol, .content ol + p, .content ul + p, .content ul + ul, .content li + li, .content p + img, .content img + p {margin-top: 10px}
+.content ul li {position: relative; padding-left: 15px}
+.content ul li:before {width: 5px; height: 5px; position: absolute; left: 0; top: 10px; content: ''; background: #000}
+.content ol li {list-style-type: none}
+.content ol {counter-reset: list1}
+.content ol li:before {counter-increment: list1; content: counter(list1) ". "; display: inline-block; vertical-align: middle; margin-top: -2px; margin-right: 5px}
+/* CONTENT */
+
+
+/* GALLERY */
+.gallery-list {display: grid; grid-template-columns: repeat(2,1fr); gap: 40px}
+.gallery-list a {text-decoration: none}
+.gallery-list .title {font-size: 18px; margin-top: 5px}
+.gallery-page {display: grid; column-gap: 5px; row-gap: 40px; grid-template-columns: 1fr 1fr}
+.gallery-page .item:first-of-type, .gallery-page .item:last-of-type {grid-column: span 2}
+.gallery-page img {width: 100%}
+/* GALLERY */
+
+
+/* CATALOG */
+.cats {margin: 40px 0 20px 0; gap: 10px}
+.cats a {text-align: center; height: 30px; line-height: 28px; border-radius: 2px; border: 1px solid #000; flex: auto}
+.cats a.active, .cats a:hover {background: #000; color: #fff}
+.catalog h1 {font-size: 30px; margin-bottom: 20px}
+.catalog .top-description {max-width: 980px; margin: 0 auto 80px auto; text-align: center}
+.product-wrapper {position: relative}
+.products-wrapper .grid {display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 20px; row-gap: 40px}
+.product-wrapper img {width: 100%; aspect-ratio: 1/1; border-radius: 2px}
+.product-wrapper .bottom-part {text-align: center; margin-top: 10px; font-weight: 400}
+.products-wrapper .stickers {position: absolute; top: 5px; left: 5px; font-size: 10px; font-weight: 400}
+.products-wrapper .stickers span {background: #000; color: #fff; border-radius: 2px; padding: 5px}
+/* CATALOG */
+
+/* PRODUCT */
+.product-details-block .max {max-width: 1050px}
+.product-details-block h1 {margin-bottom: 20px; font-size: 30px}
+.product-details-block .first {display: grid; align-items: center; gap: 20px; grid-template-columns: repeat(3,minmax(0, 1fr)); margin-bottom: 20px}
+.product-details-block .first .item:nth-of-type(1) {grid-row: span 2}
+.product-details-block .first .item:nth-of-type(2) {grid-column: span 2}
+.product-details-block .first .item:nth-of-type(1) img {aspect-ratio: 3/4; object-fit: contain; width: 100%}
+.product-details-block .first .item.text {line-height: 1.1 !important; font-size: 14px}
+.product-details-block .first .item.text .content {min-height: calc(4.5em + 5px)}
+.product-details-block .first .item.text strong {font-weight: 400; display: block; margin-top: 5px}
+.product-details-block .first img {border-radius: 2px}
+.product-details-block .third {margin: 20px auto; max-width: 1050px; padding: 0 20px}
+.product-details-block .third img {border-radius: 2px}
+.product-details-block .prev, .product-details-block .next {border: 1px solid #000; width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0}
+.product-details-block .prev.disabled, .product-details-block .next.disabled {opacity: 0.2; pointer-events: none}
+.product-details-block .next svg, .product-details-block .prev svg {width: 12px}
+.product-details-block .prev svg {transform: rotateZ(180deg)}
+.product-details-block .buttons-block {margin: 20px 0 0 0; gap: 20px}
+/* PRODUCT */
+
+
+/* FILTER */
+.mg-filter-body {margin-top: 20px}
+.show-filter {border-radius: 2px; background-color: #f2f2f2; background-image: url("data:image/svg+xml,<svg viewBox='11.4 7.1' width='11.4' height='7.1' xmlns='http://www.w3.org/2000/svg'><path d='M5,6.4l-5-5L1.4,0l4.3,4.3L10,0l1.4,1.4l-5,5L5.7,7.1L5,6.4z'/></svg>"); background-repeat: no-repeat; background-position: right 15px center; padding: 0 28px 0 10px; background-size: 8px; cursor: pointer; height: 30px; line-height: 30px}
+.show-filter:hover, .show-filter.active {background-color: #000; color: #fff; background-image: url("data:image/svg+xml,<svg viewBox='11.4 7.1' width='11.4' height='7.1' xmlns='http://www.w3.org/2000/svg'><path fill='%23fff' d='M5,6.4l-5-5L1.4,0l4.3,4.3L10,0l1.4,1.4l-5,5L5.7,7.1L5,6.4z'/></svg>")}
+.filter-form {background-color: #f2f2f2; padding: 40px 20px; border-radius: 2px; text-align: left; display: none}
+.filter-form li + li {margin-top: 5px}
+.range-field {display: none}
+.mg-filter .remove {display: none}
+.mg-filter-title {font-weight: 400; margin-bottom: 10px; display: block}
+.mg-filter-item {margin-bottom: 20px}
+.mg-viewfilter-all, .mg-viewfilter {text-decoration: underline; color: #cf0e0e; font-weight: 400; font-size: 12px}
+.refreshFilter {font-weight: 400}
+.filter-buttons {gap: 10px}
+.filter-btn {padding: 0 20px}
+.mg-filter .disabled-prop {opacity: 0.1}
+.filter-preview {position: absolute; background: #cf0e0e; color: #fff; padding: 5px; z-index: 10; margin-top: -7px; display: none !important}
+.filter-preview a {text-decoration: underline; font-weight: 500}
+/* FILTER */
+
+
+/* FOOTER */
+footer {background: #000; padding: 40px 0; color: #fff; position: relative; overflow: hidden; font-size: 15px}
+footer .max {max-width: 1050px}
+footer .menu {gap: 20px}
+footer .back {position: absolute; right: -100px; bottom: -100px; width: 400px; height: 400px; pointer-events: none; opacity: 0.08}
+footer .copiright {opacity: 0.5; margin-top: 40px; font-size: 14px}
+footer .copiright .show-modal {text-decoration: underline; display: block; margin-top: 5px; cursor: pointer}
+footer .belka {width: 30px; height: 14px; margin-top: 20px; opacity: 0.2; transition: 250ms; display: block}
+footer .belka:hover {opacity: 1}
+.contacts-block.page span {border: 1px solid #00000022}
+.contacts-block h2 {font-size: 22px; margin-bottom: 20px; margin-top: 40px}
+.contacts-block a {text-decoration: none}
+.contacts-block {margin-bottom: 40px; row-gap: 10px; column-gap: 30px}
+.contacts-block .item {gap: 10px}
+.contacts-block span {width: 40px; height: 40px; border-radius: 50%; border: 1px solid #ffffff55; flex-shrink: 0}
+.contacts-block span svg {width: 12px}
+/* FOOTER */
+
+.modal {position: fixed; top: 0; right: -500px; width: 500px; height: 100%; z-index: 9000; background: #fff; transition: 250ms}
+.modal .inner {padding: 80px 40px; overflow-y: auto; height: 100%}
+.modal.show {right: 0}
+.overlay {position: fixed; z-index: 8000; background: #00000022; width: 100%; height: 100%; display: none; top: 0; left: 0}
+.modal .close {position: absolute; top: 20px; right: 20px; height: 60px; width: 60px; border: 1px solid #00000022; border-radius: 50%; display: flex; z-index: 1}
+.modal .close svg {width: 60px; height: 60px; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: transform 400ms; transform: rotate(45deg)}
+.modal .close svg .line {fill:none; transition: stroke-dasharray 400ms, stroke-dashoffset 400ms; stroke: currentColor; stroke-width:4; stroke-linecap:round}
+
+.modal .close svg .top {stroke-dasharray: 40 160; stroke-dashoffset: -64px}
+.modal .close svg .middle {stroke-dasharray: 40 142; transform-origin: 50%; transition: transform 400ms; transform: rotate(90deg)}
+.modal .close svg .bottom {stroke-dasharray: 40 85; transform-origin: 50%; transition: transform 400ms, stroke-dashoffset 400ms; stroke-dashoffset: -64px}
+.modal .close:hover {border-color: #000}
+
+
+.product-details-block .prev:hover, .product-details-block .next:hover {background: #000; color: #fff}
+
+@media screen and (max-width: 1919px) {
+body {font-size: 15px}
+footer {font-size: 14px}
+footer .copiright {font-size: 13px}
+.home-second img {width: calc(50% - 10px); border-radius: 2px}
+.home-second .text {width: calc(50% - 10px); padding: 40px}
+.home-second .chess + .chess {margin-top: 20px}
+.home-second .chess + .chess img {order: 2}
+.product-details-block .first .item.text {font-size: 13px}
+.mobile-menu {font-size: 14px}
+}
+
+@media screen and (max-width: 767px) {
+body {font-size: 13px}
+header .max {height: 80px}
+header .menu-block {width: 40px; height: 40px}
+body.body__index .menu-close {border-color: #000; color: #000}
+.menu-close, .modal .close {width: 40px; height: 40px}
+.mobile-show {display: block !important}
+.mobile-hide {display: none !important}
+.home-first h1, .home-last .h1-like {font-size: 70px}
+.home-first h2, .home-last .h2-like {font-size: 20px}
+.products-wrapper .grid {grid-template-columns: repeat(2, 1fr); column-gap: 10px; row-gap: 20px}
+.home-second img {width: calc(100% + 40px); order: 1 !important; margin: 20px -20px; max-width: unset}
+.home-second .text {padding: 0; width: 100%; order: 2 !important}
+.home-third {margin: 20px 0 40px 0; padding: 0 40px}
+.home-third img {width: calc(100% - 40px); margin: 0 auto; aspect-ratio: 1/1; object-fit: cover}
+.home-second h2 {margin: 20px 0; font-size: 20px}
+.home-second h2 span {display: block}
+.home-second {margin: 40px 0 20px 0}
+.product-details-block h1 {font-size: 24px}
+.product-details-block .first {column-gap: 10px; grid-template-columns: repeat(2,minmax(0, 1fr))}
+.product-details-block .first .item.text {font-size: 12px}
+.product-details-block .first .item:nth-of-type(1) {grid-row: unset}
+.product-details-block .first .item:nth-of-type(2) {grid-column: unset}
+footer .menu {gap: 10px}
+footer .menu li {width: 100%}
+.contacts-block {gap: 10px}
+.contacts-block .item {width: 100%}
+.cats {margin: 40px 0 2px 0; gap: 5px}
+.show-filter {width: 100%; margin-top: 5px}
+.catalog .top-description {margin-bottom: 40px}
+.catalog h1, .static h1, .content h1 {font-size: 20px}
+.cats a:nth-of-type(1), .cats a:nth-of-type(2) {width: calc(50% - 5px)}
+.gallery-page {grid-template-columns: 100%}
+.gallery-page .item:first-of-type, .gallery-page .item:last-of-type {grid-column: unset}
+.mobile-menu {background: #fff; top: 0; width: 100%; left: 0; position: fixed; transform: scaleY(0); padding: 80px 20px 0 20px; height: 100%; text-align: center; color: #000}
+.mobile-menu.show {transform: scaleY(1)}
+.mobile-menu a {padding: 15px 0}
+.modal {width: 100%; right: -100%}
+.modal .inner {padding: 40px 20px}
+.product-details-block .first .item.text .content {min-height: unset}
+}

@@ -1,0 +1,36 @@
+.amount {
+    max-width: 100px;
+}
+
+.amount__fild {
+    display: flex;
+    align-items: center;
+}
+
+.amount__up,
+.amount__down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.amount__up:hover,
+.amount__down:hover {
+    
+}
+
+.amount__input {
+    width: 60px;
+    height: 50px;
+    padding: 0 44px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    transition: border .3s;
+}
+
+.amount__input:focus {
+   
+}

@@ -1,0 +1,119 @@
+/* c-apply
+------------------------------------------------------------------- */
+.c-apply__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+    .c-apply__title {
+        margin-top: -32px;
+    }
+}
+
+.c-apply__form {
+    padding: 10px;
+    border: 1px solid #dadada;
+    background: -webkit-gradient(linear, left top, right top, from(#ece9e6), to(#fff));
+    background: -webkit-linear-gradient(left, #ece9e6, #fff);
+    background: -o-linear-gradient(left, #ece9e6, #fff);
+    background: linear-gradient(to right, #ece9e6, #fff);
+}
+
+.c-apply__tags {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-apply__tags--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 30px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 4px 10px;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .c-apply__tags--item {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+        border-radius: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+}
+
+.c-apply__tags--item:last-child {
+    margin-right: 0;
+}
+
+.c-apply__tags--name {
+    white-space: nowrap;
+}
+
+.c-apply__tags--values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.c-apply__tags--value {
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 6px;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .c-apply__tags--value {
+        margin-top: 6px;
+    }
+}
+
+.c-apply__tags--remove {
+    font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.c-apply__tags--remove:hover .icon{
+    fill: red;
+}
+
+.c-apply__refresh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 4px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}

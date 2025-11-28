@@ -1,0 +1,21 @@
+:root {
+    --main-color: #c56689;
+    --secondary-color: #7d3e6f;
+    --main-text-color: #494949;
+    --background-color: #f8f8f8;
+    --third-background-color: #4854a2;
+    --button-background: #f8f8f8;
+    --hover-btn-color: #d2d2d2;
+    --icons-color: #AAADB2;
+    --second-text-color: #898d94;
+    --third-text-color: #696161;
+    --light-text-color: #fff;
+    --background-sticker-new: #2ecc71;
+    --background-sticker-hit: #f39c12;
+    --background-sticker-sale: #9bd050;
+    --background-sticker-code: #fdf2cc;
+    --background-sticker-product-in: #dbf5ce;
+    --background-sticker-product-out: #ffe0e0;
+    --main-border-color: #dadada;
+    --accent-border-color: #f39c12;
+}

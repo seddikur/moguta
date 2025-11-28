@@ -1,0 +1,37 @@
+/*стили админки*/
+.section-mg-status-order .link-result{
+    height: 34px;
+}
+
+.section-mg-status-order{
+    padding: 0;
+}
+
+.section-mg-status-order h2{
+    font-size: 18px;
+    line-height: 16px;
+    margin:10px;
+}
+.section-mg-status-order .actions .change{
+    display: none;
+    font-size: 11px;
+    line-height: 11px;
+}
+.section-mg-status-order .actions .change.error{
+    color: red;
+}
+.section-mg-status-order .actions .change.success{
+    color: green;
+}
+.section-mg-status-order .preview{
+    text-align: center;
+}
+.section-mg-status-order .addNewStatus{
+    margin: 10px;
+}
+.section-mg-status-order .colorSelector{
+    margin-left: 16px;
+}
+.section-mg-status-order .badge{
+
+}

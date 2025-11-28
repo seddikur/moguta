@@ -1,0 +1,46 @@
+.c-compare__link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.c-compare__link--icon {
+    font-size: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #5b3f97;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .c-compare__link--icon {
+        font-size: 24px;
+    }
+}
+
+.c-compare__link--count {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.c-compare__link--text {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #666;
+}
+
+.c-compare__link:hover .c-compare__link--text {
+    text-decoration: underline;
+}

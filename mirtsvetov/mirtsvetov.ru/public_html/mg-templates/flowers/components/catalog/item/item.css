@@ -1,0 +1,46 @@
+.product-card__row {
+    display: flex;
+}
+
+.product-card__start {
+    width: 40%;
+}
+
+.product-card__end {
+    width: 60%;
+}
+
+
+.product-card__media {
+    position: relative;
+}
+
+.product-card__stickers {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.sticker {
+    background: #000;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.product-card__info {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.product-card__name {
+    width: 100%;
+    text-align: center;
+}
+
+.product-card__color {
+    margin-left: auto;
+}

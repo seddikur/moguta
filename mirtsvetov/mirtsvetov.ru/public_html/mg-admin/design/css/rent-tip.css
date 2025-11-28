@@ -1,0 +1,59 @@
+.admin-list__tip:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid rgba(39, 115, 235, 0.82);
+  bottom: 100%;
+  left: 60px;
+  right: auto;
+  margin: auto;
+}
+
+.admin-list__tip {
+  position: absolute;
+  width: 245px;
+  top: 150%;
+  left: 50px;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgba(39, 115, 235, 0.82);
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  line-height: 1.4;
+}
+
+.admin_tip__close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+}
+
+.admin_tip__close:hover {
+  opacity: 1;
+}
+
+.admin_tip__close:before,
+.admin_tip__close:after {
+  position: absolute;
+  left: 7px;
+  content: " ";
+  height: 15px;
+  width: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.admin_tip__close:before {
+  transform: rotate(45deg);
+}
+
+.admin_tip__close:after {
+  transform: rotate(-45deg);
+}

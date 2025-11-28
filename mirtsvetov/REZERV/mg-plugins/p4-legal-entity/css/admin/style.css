@@ -1,0 +1,353 @@
+/* 
+    Содержит стили оформления страницы плагина и компонентов.
+*/
+
+/* 
+    widget-panel.
+*/
+.mg-admin-html .countPrintRowsEntity {
+    margin: 0 !important;
+}
+
+/* 
+    Таблица.
+*/
+.mg-admin-html .main-table {
+    margin: 0 !important;
+}
+
+.mg-admin-html .section-p4-legal-entity input[readonly] {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.mg-admin-html .section-p4-legal-entity input:disabled {
+    cursor: not-allowed;
+    background-color: #efefef;
+}
+
+.section-p4-legal-entity .button-link {
+    display: block;
+    color: #1585cf;
+    border-bottom: 1px dashed #1585cf;
+}
+
+.section-p4-legal-entity .button-link:hover {
+    border-color: transparent;
+}
+
+/* 
+    Компонент вывода юридических лиц в модальном окне.
+*/
+.legals {
+    line-height: 22px;
+}
+
+.legals__section + .legals__section {
+    margin-top: 30px;
+}
+
+.legals__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 23px;
+}
+
+.legals__add {
+    margin-bottom: 30px;
+}
+
+.legals__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.info__item + .info__item {
+    margin-top: 5px;
+}
+
+.info__button {
+    margin-top: 15px;
+}
+
+/* element */
+@media(min-width: 0) {
+    .element {
+        padding: 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .element {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .element {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    
+    }
+}
+
+.element_active .element__inner {
+    border: 1px solid #ca4c85;
+}
+
+.element__inner {
+    border: 1px solid #fff;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 6px 30px 0 rgb(0 0 0 / 7%);
+    -moz-box-shadow: 0 6px 30px 0 rgba(0,0,0,.7);
+    box-shadow: 0 6px 30px 0 rgb(0 0 0 / 7%);
+    height: 100%;
+}
+
+.element__inner__colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.element__item span:first-of-type {
+    margin-right: 5px;
+}
+
+.element__tab {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: none;
+    font-size: 0;
+    border: none; 
+}
+
+.element__item + .element__item {
+    margin-top: 10px;
+}
+
+.element__item div + div {
+    margin-top: 10px;
+}
+
+.element__action {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.element-action {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.element-action__item + .element-action__item {
+    margin-left: 5px;
+}
+
+.element-action button {
+    padding: 5px;
+}
+
+.element__default {
+    margin-top: 10px;
+    
+}
+
+.element-default {
+    visibility: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+.element_active .element-default,
+.element-default_active {
+    visibility: visible;
+}
+
+.element-default_active {
+    color: #919191;
+}
+
+.element__button {
+    position: relative;
+    z-index: 1;
+}
+
+/* dropdown */
+.dropdown {
+    display: none;
+}
+
+.dropdown_active {
+    display: block;
+}
+
+/*
+    Компонент привязки пользователя в модальном окне.
+*/
+.user {
+    position: relative;
+}
+
+.user__search-result {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    background-color: #fff;
+    width: 100%;
+    max-height: 210px;
+    overflow: auto;
+}
+
+.user__search-item {
+    padding: 10px;
+    cursor: pointer;  
+}
+
+.user__search-item:hover {
+    color: #fefefe;
+    background-color: #2196f3;
+}
+
+.user__container {
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user__empty {
+    text-align: center;
+}
+.user__empty_invalid {
+    color: red;
+}
+
+/*
+    Компонент сессиий в модальном окне.
+*/
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    @media (max-width: 767px) {
+        .day {
+        flex-wrap: wrap;
+        }
+    }
+
+.day:first-child {
+    border-top: 1px solid #e6e6e6;
+}
+
+.day + .day {
+    margin-top: 15px;
+
+}
+.day__name {
+    margin-left: 15px;
+}
+
+.day__checkbox {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+    @media (max-width: 767px) {
+        .day__checkbox {
+            width: 100%;
+        }
+    }
+
+.day__date {
+    display: flex;
+    align-items: center;
+}
+
+    @media (min-width: 768px) {
+        .day__date {
+            margin-left: auto;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .day__date {
+            flex-wrap: wrap;
+        }
+    }
+
+.day__start {
+    display: flex;
+    align-items: center;   
+}
+
+    @media (max-width: 767px) {
+        .day__start {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
+.day__end {
+    display: flex;
+    align-items: center; 
+}
+
+    @media (min-width: 768px) {
+        .day__end {
+            margin-left: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .day__end {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+
+.day__label {
+    margin-right: 15px;
+}
+
+    @media (max-width: 767px) {
+        .day__label {
+        width: 120px;
+        }
+    }
+
+.date-from-input {
+    max-width: 100px;
+    text-align: center;
+}
+
+.date-before-input {
+    max-width: 100px;
+    text-align: center;
+}

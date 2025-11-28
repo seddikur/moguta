@@ -1,0 +1,29 @@
+.section-mg-push-notifications .device-stats {
+	background: #f8f9fa;
+	border: 1px solid #dee2e6;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.section-mg-push-notifications .device-stats h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+.section-mg-push-notifications .list-option li {
+	margin-bottom: 15px;
+}
+
+.section-mg-push-notifications .list-option label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.section-mg-push-notifications .list-option input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
