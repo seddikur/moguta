@@ -1,0 +1,15 @@
+.c-product__code {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 24px;
+    padding: 0 10px;
+    background: #fdf2cc;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-product__code--span {
+    margin-left: 4px;
+}

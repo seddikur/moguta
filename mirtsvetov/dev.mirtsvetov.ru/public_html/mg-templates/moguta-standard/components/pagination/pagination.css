@@ -1,0 +1,74 @@
+/* c-pagination
+------------------------------------------------------------------- */
+.c-pagination .allPages,
+.mg-pager .allPages {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.c-pagination ul,
+.mg-pager ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.c-pagination ul a,
+.mg-pager li > a,
+.mg-pager li > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 32px;
+    margin: 4px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    color: #666;
+    border-radius: 3px;
+    background: #dadada;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .c-pagination ul a,
+    .mg-pager li > a,
+    .mg-pager li > button {
+        width: 30px;
+        height: 26px;
+    }
+}
+
+.c-pagination ul a:hover,
+.c-pagination ul a.active,
+.mg-pager li > a:hover,
+.mg-pager li > a.active,
+.mg-pager li > button.active {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.c-pagination ul a:active,
+.mg-pager li > a:active,
+.mg-pager li > button:active {
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
+.mg-pager .linkPage:focus {
+    outline: auto;
+}

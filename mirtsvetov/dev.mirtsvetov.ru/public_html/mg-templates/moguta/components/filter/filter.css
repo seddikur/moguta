@@ -1,0 +1,487 @@
+/* c-filter
+------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .c-filter {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        -webkit-transition: all .15s ease-in-out;
+        -o-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        opacity: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .c-filter__content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        width: 260px;
+        background: #fff;
+    }
+
+    .c-filter__button .icon {
+        margin-right: 10px;
+    }
+
+    .c-filter--active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.c-filter .filter-form {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    background: #fff;
+}
+
+@media (max-width: 1024px) {
+    .c-filter .filter-form {
+        padding-bottom: 30px;
+        border: 0;
+    }
+}
+
+.c-filter label {
+    line-height: 1.2;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-filter label [type='checkbox'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.c-filter label [type='checkbox']:checked ~ .cbox {
+    background: #5b3f97;
+}
+
+.c-filter label .cbox {
+    display: block;
+    min-width: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    max-height: 15px;
+    margin-right: 10px;
+    border: 1px solid #dadada;
+    background: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+    box-shadow: inset 0 0 0 2px #fff;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+.c-filter label:hover .unit {
+    border-color: #c1c1c1;
+}
+
+.c-filter select,
+.c-filter [type='text'] {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    color: #666;
+    border: 1px solid #dadada;
+    background: #fff;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+@media (max-width: 767px) {
+    .c-filter select,
+    .c-filter [type='text'] {
+        height: 34px;
+        padding: 0 10px;
+    }
+}
+
+.c-filter select:focus,
+.c-filter [type='text']:focus {
+    border-color: #f5c002;
+    -webkit-box-shadow: inset 0 0 0 1px #f5c002;
+    box-shadow: inset 0 0 0 1px #f5c002;
+}
+
+.c-filter .mg-filter-head {
+    margin-bottom: 20px;
+}
+
+.c-filter .mg-filter-head .wrapper-field {
+    margin-bottom: 10px;
+}
+
+.c-filter .label-field {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.c-filter .price-slider-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.c-filter .mg-filter-head .price-input {
+    padding-right: 34px;
+}
+
+.c-filter .mg-filter-head .price-input ~ span,
+.price-slider-list input + span {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    color: #666;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.c-filter .mg-filter-head .ui-slider {
+    width: calc(100% - 14px);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.c-filter .ui-slider .ui-slider-range {
+    background: #5b3f97;
+}
+
+.c-filter .mg-filter-body {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .c-filter .mg-filter-body {
+        padding-bottom: 10px;
+    }
+}
+
+.c-filter .mg-filter-body .mg-filter-title {
+    font-size: 12px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 8px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #dadada;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-filter .mg-filter-body .mg-filter-item {
+    margin-top: 20px;
+}
+
+.c-filter .mg-filter-body .mg-filter-item select {
+    height: 30px;
+    padding: 0 6px;
+}
+
+.c-filter .mg-filter-body li {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.c-filter .price-slider-list li {
+    position: relative;
+    width: 49%;
+    margin-top: 0;
+}
+
+.c-filter .mg-filter-body li:first-child {
+    margin-top: 0;
+}
+
+.c-filter .mg-filter-body .disabled-prop {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.c-filter .mg-filter-body .mg-tooltip {
+    font-size: 12px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    cursor: default;
+    border-radius: 100%;
+    background: #dadada;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.c-filter .mg-filter-body .mg-tooltip-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 100%;
+    left: 100%;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    background: #fff;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.c-filter .mg-filter-body .mg-tooltip:hover .mg-tooltip-content {
+    display: block !important;
+}
+
+.c-filter .mg-filter-body .mg-viewfilter-all,
+.c-filter a.mg-viewfilter {
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.c-filter .mg-filter-body .mg-viewfilter-all:hover,
+.c-filter a.mg-viewfilter:hover {
+    text-decoration: none;
+}
+
+.c-filter .filter-buttons {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .c-filter .filter-buttons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 260px;
+        height: 60px;
+        padding: 10px;
+        background: #fff;
+        -webkit-box-shadow: 0 -6px 6px rgba(0, 0, 0, .1);
+        box-shadow: 0 -6px 6px rgba(0, 0, 0, .1);
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .c-filter .filter-buttons > * {
+        width: 50%;
+    }
+}
+
+.c-filter .filter-buttons .refreshFilter {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .c-filter .filter-buttons .refreshFilter {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-filter .filter-buttons .refreshFilter {
+        font-size: 16px;
+    }
+}
+
+.c-filter .filter-buttons .refreshFilter:hover {
+    text-decoration: underline;
+}
+
+.c-filter .filter-preview {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    margin-bottom: 35px;
+    -webkit-animation-name: arrow;
+    animation-name: arrow;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    color: #fff;
+    background: #cd4449;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.c-filter .filter-preview span {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .c-filter .filter-preview {
+        display: none !important;
+    }
+}
+
+.c-filter .filter-preview:before {
+    position: absolute;
+    top: 0;
+    left: -25px;
+    display: block;
+    content: '';
+    -webkit-animation-name: before;
+    animation-name: before;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    border-top: 25px solid transparent;
+    border-right: 25px solid #cd4449;
+    border-bottom: 25px solid transparent;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes arrow {
+    from {
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes arrow {
+    from {
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes before {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes before {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.c-filter .filter-preview span:not(.lang-editor) {
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+.c-filter .filter-preview a {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.c-filter .filter-preview a:hover {
+    text-decoration: none;
+}
+
+.mg-filter .color-filter span.value-name {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 5px);
+    background: #fff;
+    padding: 7px;
+    border: 1px solid #dadada;
+}
+
+.mg-filter .color-filter:hover span.value-name {
+    display: block;
+}
+
+.mg-filter .color-filter {
+    display: inline-block;
+}
+
+.c-filter .color-filter .cbox {
+    min-width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .25), rgba(0, 0, 0, .125));
+    background: -o-linear-gradient(135deg, rgba(255, 255, 255, .25), rgba(0, 0, 0, .125));
+    background: linear-gradient(-45deg, rgba(255, 255, 255, .25), rgba(0, 0, 0, .125));
+}
+
+.c-filter .color-filter label:hover .cbox {
+    -webkit-box-shadow: 0 0 0 3px #d9d9d9;
+    box-shadow: 0 0 0 3px #d9d9d9;
+}
+
+.c-filter .color-filter label [type='checkbox']:checked ~ .cbox {
+    -webkit-box-shadow: 0 0 0 3px #333;
+    box-shadow: 0 0 0 3px #333;
+}
+
+.c-disable-range {
+    pointer-events: none;
+    opacity: 0.5;
+}

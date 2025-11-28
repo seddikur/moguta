@@ -1,0 +1,72 @@
+
+.prop-string .prop-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #333;
+    font-size: 16px;
+    list-style: none;
+    position: relative;
+    border-bottom: 2px dotted #000;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.prop-string .prop-name {
+    max-width: 35%;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+.prop-string {
+    max-width: 700px;
+}
+
+.prop-string .prop-spec {
+    float: right;
+    text-align: right;
+    width: 55%;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+.prop-string .prop-spec,
+.prop-string .prop-name,
+.prop-string .prop-unit {
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    margin-bottom: -6px;
+    color: #333;
+}
+
+.prop-string .name-group {
+    position: relative;
+    margin: 25px 0 5px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.prop-string li:first-of-type {
+    margin-top: 0;
+}
+
+.prop-string .prop-item:hover span {
+    color: #5b3f97;
+}
+
+.prop-string .prop-item {
+    cursor: text;
+}
+
+.prop-name__inner,
+.prop-spec__inner {
+    background: #fff;
+}

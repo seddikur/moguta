@@ -1,0 +1,27 @@
+.footer__payments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.footer__pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    opacity: 0.5;
+    height: 16px;
+    margin-bottom: 10px;
+}
+
+.footer__pay:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.footer__pay:hover {
+    opacity: 1;
+}

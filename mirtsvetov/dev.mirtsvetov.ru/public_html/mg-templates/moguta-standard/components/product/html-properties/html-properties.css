@@ -1,0 +1,36 @@
+/* property-form
+------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .property-form {
+        font-size: 12px;
+    }
+}
+
+.property-form br {
+    display: none;
+}
+
+.property-form p {
+    line-height: 1.2;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .property-form p {
+        margin-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+.property-form label {
+    margin-top: 10px;
+}
+
+.property-form select {
+    margin-top: 10px;
+}
+
+.property-form .property-title {
+    font-weight: 600;
+}

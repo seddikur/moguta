@@ -1,0 +1,111 @@
+/* Избранное */
+.mg-add-to-favorites,
+.mg-remove-to-favorites {
+    border: 1px solid #cfcfcf;
+    border-bottom: 0;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 5px 4px 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 5px;
+    line-height: 17px;
+    position: absolute;
+    top: -26px;
+    background: #f2f2f2;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    width: 142px;
+}
+
+
+@media(min-width: 767px) {
+	.c-goods__item:hover .mg-add-to-favorites,
+	.c-goods__item:hover .mg-remove-to-favorites {
+    	opacity: 1;
+    	visibility: visible;
+	}
+}
+
+@media(max-width: 766px) {
+	.c-goods__item .mg-add-to-favorites,
+	.c-goods__item .mg-remove-to-favorites {
+    	opacity: 1;
+    	visibility: visible;
+	}
+}
+
+.mg-add-to-favorites svg,
+.mg-remove-to-favorites svg {
+    width: 20px;
+    height: 15px;
+    vertical-align: sub;
+    margin-right: 4px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.mg-add-to-favorites svg,
+.mg-remove-to-favorites:hover svg {
+    stroke: var(--icons-color);
+    fill: #fff;
+}
+
+.mg-add-to-favorites:hover svg,
+.mg-remove-to-favorites svg {
+    stroke: #df3f3f;
+    fill: #df3f3f;
+}
+
+.remove__hover {
+    display: none;
+    width: 87px;
+    text-align: center;
+}
+
+.mg-remove-to-favorites--product .remove__hover {
+    width: 102px;
+}
+
+.mg-remove-to-favorites:hover .remove__text {
+    display: none;
+}
+
+.mg-remove-to-favorites:hover .remove__hover {
+    display: inline-block;
+}
+
+.mg-product-slides .mg-remove-to-favorites--product,
+.mg-product-slides .mg-add-to-favorites--product {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    top: 5px;
+    right: 5px;
+    z-index: 51;
+    border: 0;
+    background: transparent;
+    font-size: 12px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+}
+
+.mg-product-slides .mg-remove-to-favorites--product svg,
+.mg-product-slides .mg-add-to-favorites--product svg {
+    vertical-align: bottom;
+    width: 26px;
+    height: 20px;
+}
+
+.c-images.mg-product-slides {
+    position: relative;
+}

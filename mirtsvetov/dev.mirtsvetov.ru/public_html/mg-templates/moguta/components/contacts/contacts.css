@@ -1,0 +1,131 @@
+/* c-contact
+------------------------------------------------------------------- */
+.c-contact {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+    .c-contact {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-contact {
+        font-size: 16px;
+    }
+
+}
+
+.c-contact:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    content: '';
+    background: #dadada;
+}
+
+.c-contact__column {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 44px;
+}
+
+@media (max-width: 1024px) {
+    .c-contact__column {
+        padding-right: 16px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 989px) {
+    .c-contact__column {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-contact__column:first-of-type {
+        display: none;
+    }
+
+    .c-contact__number span{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .c-contact__column:last-of-type {
+        padding-left: 40px;
+    }
+}
+
+.c-contact__column .icon {
+    font-size: 34px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: none;
+    color: #5b3f97;
+}
+
+@media (max-width: 1024px) {
+    .c-contact__column .icon {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 989px) {
+    .c-contact__column .icon {
+        display: none;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .c-contact__column .icon--phone {
+        display: block;
+    }
+}
+
+.c-contact__row {
+    line-height: 1;
+    margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+    .c-contact__row {
+        margin-top: 8px;
+    }
+}
+
+.c-contact__row:first-of-type {
+    margin-top: 0;
+}
+
+.c-contact__span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .c-contact__span {
+        font-size: 16px;
+    }
+}

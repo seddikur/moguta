@@ -1,0 +1,10 @@
+.bread-crumbs__item {
+	list-style: none;
+	display: inline-block;
+}
+.bread-crumbs {
+	padding-left: 0;
+}
+.l-body .bread-crumbs__item svg {
+	display: none;
+}

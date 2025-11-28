@@ -1,0 +1,99 @@
+
+/* c-cart
+------------------------------------------------------------------- */
+.c-cart {
+    position: relative;
+}
+
+.c-cart__small {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+
+.c-cart__small--icon {
+    font-size: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #5b3f97;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .c-cart__small--icon {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .c-cart__small--icon {
+        font-size: 22px;
+    }
+}
+
+.c-cart__small--text {
+    font-size: 12px;
+    margin-top: 4px;
+    color: #666;
+}
+
+.c-cart__small--price {
+    display: none;
+}
+
+.c-cart__small:hover .c-cart__small--text {
+    text-decoration: underline;
+}
+
+.c-cart__dropdown {
+    position: absolute;
+    z-index: 90;
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+    width: 700px;
+    padding: 20px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    opacity: 0;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 1024px) {
+    .c-cart__dropdown {
+        display: none!important;
+    }
+}
+
+.c-cart:hover .c-cart__dropdown {
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+}

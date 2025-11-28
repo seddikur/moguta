@@ -1,0 +1,133 @@
+
+/* c-modal
+------------------------------------------------------------------- */
+.c-modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    overflow: auto;
+    background: rgba(0, 0, 0, .7);
+}
+
+.c-modal--open {
+    display: block;
+}
+
+.c-modal__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+    margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .c-modal__wrap {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .c-modal__wrap {
+        min-height: initial;
+    }
+}
+
+.c-modal__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background: #fff;
+}
+
+@media (min-width: 768px) {
+    .c-modal__content {
+        width: 300px;
+        height: auto;
+    }
+}
+
+.c-modal__close {
+    font-size: 16px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    background: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .c-modal__close {
+        position: absolute;
+    }
+}
+
+.c-modal__close:hover {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .c-modal--400 .c-modal__content {
+        width: 400px;
+    }
+
+    .c-modal--500 .c-modal__content {
+        width: 500px;
+    }
+
+    .c-modal--600 .c-modal__content {
+        width: 600px;
+    }
+
+    .c-modal--700 .c-modal__content {
+        width: 700px;
+    }
+
+    .c-modal--full .c-modal__wrap {
+        padding: 0;
+    }
+
+    .c-modal--full .c-modal__content {
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+
+.c-modal--scroll {
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+@supports (-ms-ime-align:auto) {
+    .c-modal--scroll {
+        padding-right: 12px;
+    }
+}

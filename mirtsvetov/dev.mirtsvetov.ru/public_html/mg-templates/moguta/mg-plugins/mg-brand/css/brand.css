@@ -1,0 +1,230 @@
+.brands {
+	max-width: 100%;
+	margin: 25px 0 35px;
+}
+
+.brands__carousel {
+    display: none;
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.brands__carousel.owl-carousel.owl-loaded {
+    opacity: 1;
+}
+
+.brands__item {
+	width: 200px;
+	height: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.brands__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+}
+.owl-carousel .owl-item img {
+	width: auto!important;
+	height: auto;
+    object-fit: contain;
+}
+
+.brands__arrow {
+	font-size: 26px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 40px;
+	height: 60px;
+	margin: auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #000;
+	border: 1px solid #dadada;
+	background: #fff;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	opacity: .2;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.brands:hover .brands__arrow{
+	opacity: .6;
+}
+.brands__arrow:hover {
+	opacity: 1;
+}
+
+.brands .owl-prev,
+.brands .owl-next {
+	position: absolute;
+	z-index: 12;
+	top: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%!important;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.brands .owl-dots {
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+	position: absolute;
+	bottom: -30px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.brands .owl-dots .owl-dot {
+	display: inline-block;
+	zoom: 1;
+}
+
+.brands .owl-dots .owl-dot {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #d6d6d6;
+	display: block;
+	-webkit-backface-visibility: visible;
+	-webkit-transition: opacity 200ms ease;
+	-o-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	border-radius: 30px;
+}
+
+.brands .owl-dots .owl-dot.active,
+.brands .owl-dots .owl-dot:hover {
+	background: #869791;
+}
+
+.brands__arrow-left {
+	left: -10px;
+}
+
+.brands__arrow-right {
+	right: -10px;
+}
+
+.brands .owl-prev {
+	left: 0;
+}
+
+.brands .owl-next {
+	right: 0;
+}
+
+.brands .owl-prev.disabled,
+.brands .owl-next.disabled {
+	display: none;
+}
+
+.brands__arrow svg {
+	width: 100%;
+}
+
+.brands .owl-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.brands .c-carousel__title {
+	font-size: 22px;
+	position: relative;
+	width: 100%;
+	margin-bottom: 16px;
+	text-align: center;
+}
+@media (max-width: 767px) {
+	.brands .c-carousel__title {
+		font-size: 18px;
+	}
+}
+.brands .c-carousel__title--span {
+	font-weight: 600;
+	position: relative;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 0 26px;
+	background: #fff;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	border-radius: 2px;
+}
+@media (max-width: 767px) {
+	.brands .c-carousel__title--span {
+		padding: 0 16px;
+	}
+}
+.brands .c-carousel__title--span:hover .brands .c-carousel__title--more {
+	text-decoration: underline;
+}
+.brands .c-carousel__title--more {
+	font-size: 16px;
+	text-transform: lowercase;
+	color: #999;
+	display: block;
+}
+@media (max-width: 767px) {
+	.brands .c-carousel__title--more {
+		font-size: 12px;
+	}
+}
+.brands .c-carousel__title:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	margin: auto;
+	content: '';
+	background: #dadada;
+}
+.mg-brand .brands {
+	margin-top: 0;
+}

@@ -1,0 +1,10 @@
+.mg-slider-products .tmp-arrow {
+  border: none;
+  background: none;
+}
+.mg-slider-products .tmp-arrow-right {
+  right: -5px;
+}
+.mg-slider-products .tmp-arrow-left {
+  left: -5px;
+}

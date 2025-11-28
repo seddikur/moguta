@@ -1,0 +1,22 @@
+<?php
+
+/*
+	Plugin Name: Кнопка 'В корзине'
+	Description: Если товар в корзине - заменяет кнопку 'Купить' на 'В корзине' (для всех вариантов товара) и добавляет класс 'alreadyInCart', при удалении из мини корзины возвращает прежнее название кнопки и убирает класс.<br>У кнопки меняется только название. Товар все-равно можно будет добавить в корзину при повторном нажатии на кнопку.<br>Текст 'В корзине' можно изменить, добавив в js локализацию текущего шаблона элемент pluginInCartText.
+	Author: Nikita F
+	Version: 1.0.3
+	Edition: CLOUD
+ */
+
+new InCart;
+
+class InCart{
+
+	public function __construct() {
+
+		if (!URL::isSection('mg-admin')) {
+			mgAddMeta('<script src="'.SITE.'/'.PLUGIN_DIR.PM::getFolderPlugin(__FILE__).'/js/script.js"></script>');
+		}
+	}
+}
+?>
